@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   function checkLocation() {
     const check = true;
-    const isStaff = true;
+    const isStaff = false;
 
     if (relativeURL === '/kwk-virtual-curriculum/login/' || check === 'true') {
       showLinks(isStaff);
