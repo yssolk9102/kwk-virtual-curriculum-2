@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const logInForm = document.querySelector('.login-form');
 
   function checkLocation() {
-    const check = True;
-    const isStaff = True;
+    const check = true;
+    const isStaff = true;
 
     if (relativeURL === '/kwk-virtual-curriculum/login/' || check === 'true') {
       showLinks(isStaff);
