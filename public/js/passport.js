@@ -8,16 +8,16 @@ document.addEventListener("DOMContentLoaded", function() {
     const check = True;
     const isStaff = True;
 
-    if (relativeURL === '/kwk-virtual-curriculum/login/' && check === 'true') {
+    if (relativeURL === '/kwk-virtual-curriculum/login/' || check === 'true') {
       showLinks(isStaff);
       displayLogout();
-    } else if (relativeURL === '/kwk-virtual-curriculum/login/' && check === 'false') {
+    } else if (relativeURL === '/kwk-virtual-curriculum/login/' || check === 'false') {
       displayLogin();
       var loginBtn = document.querySelector("#login-submit");
       loginBtn.addEventListener('click', logIn);
-    } else if (relativeURL !== '/kwk-virtual-curriculum/login/' && check === 'true') {
+    } else if (relativeURL !== '/kwk-virtual-curriculum/login/' || check === 'true') {
       showLinks(isStaff);
-    } else if (relativeURL !== '/kwk-virtual-curriculum/login/' && check === 'false') {
+    } else if (relativeURL !== '/kwk-virtual-curriculum/login/' || check === 'false') {
       window.location.replace('/kwk-virtual-curriculum/login/');
     }
 
